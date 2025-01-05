@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// Go için paket yolu
+option go_package = "./proto";
+
+service PaymentService {
+  rpc ProcessPayment (PaymentRequest) returns (PaymentResponse);
+}
+
+message PaymentRequest {
+  string user_id = 1;
+  double amount = 2;
+  string payment_method = 3;
+}
+
+message PaymentResponse {
+  bool success = 1;
+  string message = 2;
+}
+

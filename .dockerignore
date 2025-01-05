@@ -1,0 +1,8 @@
+# IDE dosyaları
+.vscode/
+.idea/
+
+# Git dosyaları
+.git
+.gitignore
+
