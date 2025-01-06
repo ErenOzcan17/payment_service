@@ -11,6 +11,8 @@ message PaymentRequest {
   string user_id = 1;
   double amount = 2;
   string payment_method = 3;
+  string card_number = 4;
+  string card_expiry = 5;
 }
 
 message PaymentResponse {
